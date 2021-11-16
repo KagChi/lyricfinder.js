@@ -3,6 +3,8 @@ export declare class lyricFinder {
     private baseURI;
     search(query: string): Promise<searchResult>;
     fetchLyrics(songId: number): Promise<fetchResult>;
-    searchByTitleAndArtist(title: string, artist: string): Promise<{} | lyrics>;
+    searchByTitleAndArtist(title: string, artist: string): Promise<{} | {
+        result: lyrics;
+    }>;
 }
 //# sourceMappingURL=index.d.ts.map

@@ -14,6 +14,6 @@ export class lyricFinder {
 
     public async searchByTitleAndArtist(title: string, artist: string) {
         const JsonBrowser = await fetch(`${this.baseURI}/song?title=${encodeURIComponent(title)}&artist=${encodeURIComponent(artist)}`, { headers: { origin: this.baseURI }})
-        return JsonBrowser.json() as Promise<lyrics | {}>;
+        return JsonBrowser.json() as Promise<{ result: lyrics } | {}>;
     }
 }
