@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "compile": "rimraf dist && tsc"
+  },
+  "dependencies": {
+    "undici": "^4.10.0"
+  },
+  "name": "lyricfinder.js",
+  "version": "0.1.0",
+  "description": "A wrapper for https://www.lyricfinder.xyz internal API"
+}
